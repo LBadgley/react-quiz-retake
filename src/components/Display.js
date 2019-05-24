@@ -15,7 +15,7 @@ export default function Display({ headerText, image, footerText }) {
     <section style={styles}>
       <p >{headerText}</p>
       <div>
-        <img src="http://preetkamal.com/wp-content/uploads/2019/03/Friday-Meme-Friday-Is-My-Second.jpg" alt="friday meme"></img>
+        <img src={image} alt="friday meme"></img>
       </div>
       <p>{footerText}</p>
     </section>

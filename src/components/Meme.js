@@ -15,13 +15,12 @@ export default class Meme extends PureComponent {
 
   render() {
     const { headerText, image, footerText } = this.state;
-
+  
     return (
-      <div>
-        <TextSelector text={headerText} handleChange={this.handleChange}/>
-        <img alt="Friday meme">{image}</img>
-        <TextSelector text={footerText} handleChange={this.handleChange}/>
-      </div>
+      <>
+        <TextSelector headerText={headerText} footerText={footerText} image={image} handleChange={this.handleChange}/>
+        <Display headerText={headerText} footerText={footerText} image={image} />
+      </>
     );
   }
 }
